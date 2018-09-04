@@ -1,5 +1,5 @@
 FROM alpine:3.6
-MAINTAINER Tobias L. Maier <me@tobiasmaier.info>
+MAINTAINER Thomas Löffler <loeffler@spooner-web.de>
 
 RUN apk add --no-cache \
   bash \
