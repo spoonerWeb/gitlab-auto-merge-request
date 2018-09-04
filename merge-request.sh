@@ -17,7 +17,7 @@ fi
 
 # Look for title in variables, otherwise use branch name
 if [ -z "$MERGE_REQUEST_TITLE" ]; then
-  MERGE_REQUEST_TITLE = ${CI_COMMIT_REF_NAME}
+  MERGE_REQUEST_TITLE=$CI_COMMIT_REF_NAME
 fi
 
 # The description of our new MR, we want to remove the branch after the MR has
