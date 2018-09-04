@@ -3,7 +3,7 @@ before_script:
 
 build_image:
   script:
-    - docker build -t gitlab-auto-merge-request .
+    - docker build -t spoonerweb/gitlab-auto-merge-request .
     - echo ${DOCKER_PASSWORD} | docker login -u spoonerweb --password-stdin
     - docker push spoonerweb/gitlab-auto-merge-request
   tags:
