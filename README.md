@@ -1,14 +1,14 @@
 # Open GitLab Merge Requests automatically
 
-[![Docker Automated buil](https://img.shields.io/docker/automated/tmaier/gitlab-auto-merge-request.svg)](https://hub.docker.com/r/tmaier/gitlab-auto-merge-request/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/tmaier/gitlab-auto-merge-request.svg)](https://hub.docker.com/r/tmaier/gitlab-auto-merge-request/)
-[![Gitlab Project](https://img.shields.io/badge/GitLab-Project-554488.svg)](https://gitlab.com/tmaier/gitlab-auto-merge-request)
+[![Docker Automated buil](https://img.shields.io/docker/automated/spooner/gitlab-auto-merge-request.svg)](https://hub.docker.com/r/spooner/gitlab-auto-merge-request/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/spooner/gitlab-auto-merge-request.svg)](https://hub.docker.com/r/spooner/gitlab-auto-merge-request/)
 
 This script is meant to be used in GitLab CI to automatically open Merge Requests for feature branches, if there is none yet.
 
 The script is provided as dedicated docker image to improve maintainability in the future.
 
 It is based on the script and idea of [Riccardo Padovani](https://rpadovani.com), which he introduced with his blog post [How to automatically create new MR on Gitlab with Gitlab CI](https://rpadovani.com/open-mr-gitlab-ci).
+Then [Tobias Maier](https://github.com/tmaier/gitlab-auto-merge-request) improved the script and that was the base for my image.
 Thanks for providing this.
 
 ## Instructions
@@ -43,7 +43,7 @@ You can see this in action at [`.gitlab-ci.yml` of this project](.gitlab-ci.yml)
 
 ## Docker images
 
-The images are hosted on [Docker Hub](https://hub.docker.com/r/tmaier/gitlab-auto-merge-request).
+The images are hosted on [Docker Hub](https://hub.docker.com/r/spooner/gitlab-auto-merge-request).
 
 Two tags are noteworthy:
 * `latest`: Latest release on `master` branch of this project
@@ -53,8 +53,7 @@ Two tags are noteworthy:
 
 The [GitHub project][] is only a mirror of the [GitLab project][].
 
-[GitHub project]: https://github.com/tmaier/gitlab-auto-merge-request
-[GitLab project]: https://gitlab.com/tmaier/gitlab-auto-merge-request
+[GitHub project]: https://github.com/spoonerWeb/gitlab-auto-merge-request
 
 Please open Issues and Merge Requests at the [GitLab project][].
 
@@ -70,5 +69,6 @@ Following are not considered as API according to the spec:
 
 ## Authors
 
+* Improved merge-request script: [Thomas Löffler](https://spooner-web.de)
 * Docker part: [Tobias L. Maier](http://tobiasmaier.info)
 * Script and idea: [Riccardo Padovani](https://rpadovani.com)
